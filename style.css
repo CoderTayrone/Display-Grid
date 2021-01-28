@@ -44,11 +44,16 @@ nav a{
 @media (max-width: 1200px){
     .cards_produtos{
         grid-template-columns: repeat(2, 1fr);
-        padding: 48px;
+        padding: 12px;
     }
 }
 
 @media (max-width: 600px){
+    .container_nav{
+        grid-template-columns: 1fr;
+        margin: 12px;
+        text-align: center;
+    }
     .cards_produtos{
         grid-template-columns: 1fr;
     }
