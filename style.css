@@ -39,11 +39,89 @@ nav a{
 .card_produto{
     text-align: center;
 }
+.container_contador{
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.container_cont{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 100px 24px;
+    padding: 24px;
+    gap: 24px;
+}
+.col_contador{
+    border: 1px solid red;
+    text-align: center;
+}
+.col_contador h2{
+    color: rgba(158, 1, 1, 0.9);
+    padding: 12px;
+}
+.col_contador h3{
+    color: white;
+    padding: 8px;
+}
 
+/* Container Sobre */
+.container_about{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.col_img_about{
+    text-align: center;
+    padding: 24px;
+}
+.cards_team_about{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.card_team{
+    margin: 24px 12px;
+    padding: 24px;
+    text-align: center;
+}
+.card_team h3{
+    text-align: center;
+    font-size: 1.5em;
+    padding: 12px;
+    margin-bottom: 12px;
+}
+.col_content_about h2{
+    font-size: 3em;
+    text-align: center;
+    margin: 24px;
+    padding: 12px;
+}
+
+.col_content_about p{
+    text-align: center;
+    font-size: 1.5em;
+    max-width: 80%;
+    margin: 12px auto;
+}
+
+
+/* Media */
 
 @media (max-width: 1200px){
     .cards_produtos{
         grid-template-columns: repeat(2, 1fr);
+        padding: 12px;
+    }
+    .container_cont{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 12px;
+    }
+    .container_about{
+        grid-template-columns: 1fr;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 900px){
+    .cards_team_about{
+        grid-template-columns: 1fr 1fr;
         padding: 12px;
     }
 }
@@ -57,7 +135,19 @@ nav a{
     nav a{
         margin-top: 12px;
     }
+    .logo h2{
+        margin-bottom: 12px;
+    }
     .cards_produtos{
         grid-template-columns: 1fr;
     }
+    .container_cont{
+        grid-template-columns: 1fr;
+        padding: 12px;
+    }
+    .cards_team_about{
+        grid-template-columns: 1fr;
+        padding: 12px;
+    }
 }
+
