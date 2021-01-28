@@ -54,6 +54,9 @@ nav a{
         margin: 12px;
         text-align: center;
     }
+    nav a{
+        margin-top: 12px;
+    }
     .cards_produtos{
         grid-template-columns: 1fr;
     }
